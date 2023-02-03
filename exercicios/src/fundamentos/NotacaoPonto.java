@@ -25,6 +25,10 @@ public class NotacaoPonto {
 		String y = "Bom dia X".replace("X", "GUI");
 		
 		System.out.println(y);
+		
+		//tipos primitivos nao tem pontos. 
+		
+		
 	}
 
 }
