@@ -1,6 +1,6 @@
 package classeData;
 
-import java.util.Date;
+
 
 
 
@@ -26,8 +26,7 @@ public class DataTeste {
 		System.out.println(firstFormated);
 		System.out.println(secondFormated);
 		
-		Date d = new Date(); 
-		System.out.println(d); // data de hoje. 
+		
 		
 		
 		

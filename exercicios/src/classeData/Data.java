@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class Data {
 	
-	long dia;
-	long mes;
-	long ano;
+	public long dia;
+	public long mes;
+	public long ano;
 	
 	
 	
@@ -14,21 +14,19 @@ public class Data {
 	
 	Data(){
 		
-		dia = 1;
-		mes = 1;
-		ano = 1970;
+		this(1,1,1970); // um construtor chamou outro construtor.
 		
 	}
 	
 	
-	Data(int diaInfo, int mesInfo, long anoInfo){
-		dia = diaInfo;
-		mes = mesInfo;
-		ano = anoInfo;
+	public Data(int dia, int mes, long ano){
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
 	}
 	
-	String obterDadosFormatado() {
-		return String.format("%d/%d/%d", dia, mes, ano);
+	public String obterDadosFormatado() {
+		return String.format("%d/%d/%d", this.dia, this.mes, this.ano);
 	}// melhor forma de manipular dados inteiros e strings é o string.format
 
 
